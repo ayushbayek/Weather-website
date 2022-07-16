@@ -7,6 +7,9 @@ const forecast = require("./utils/forecast");
 
 const app = express();
 
+//Dynamic port
+const port = process.env.PORT || 3000;
+
 //Path for express configuration
 const publicDirectoryPath = path.join(__dirname, "../public");
 const viewPath = path.join(__dirname, "../template/views");
@@ -88,6 +91,12 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server is up on localhost port:3000");
+//Static port for local host
+// app.listen(3000, () => {
+//   console.log("Server is up on localhost port:3000");
+// });
+
+//Dynamic host
+app.listen(port, () => {
+  console.log(`Server is up on localhost port:${port}`);
 });
