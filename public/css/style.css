@@ -1,0 +1,54 @@
+body {
+  background: white;
+}
+
+h1 {
+  color: gray;
+}
+
+div a {
+  color: rgb(232, 149, 48);
+  margin: 0px 15px;
+}
+
+#link {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+p {
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 30vw;
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+hr {
+  height: 3px;
+  width: 100%;
+  background: gray;
+}
+
+footer {
+  margin: 0px 0px 20px 0px;
+}
+
+header {
+  margin-bottom: 20px;
+}
