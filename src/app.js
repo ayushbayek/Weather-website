@@ -68,6 +68,7 @@ app.get("/weather", (req, res) => {
             forecast: `${data.weatherDescription}. The temperature is ${data.temperature} degree but feels like ${data.feelslike} degree.`,
             location: thatData.location,
             address: req.query.address,
+            humidity: data.humidity,
           });
         }
       });

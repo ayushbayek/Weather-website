@@ -16,8 +16,8 @@ weatherForm.addEventListener("submit", (event) => {
         output.textContent = data.error;
       } else {
         // console.log(data);
-        output.innerHTML = `${data.forecast}<br><br>
-        Location: ${data.location}`;
+        output.innerHTML = `Location: ${data.location}<br><br>${data.forecast}
+        <br><br> Humidity: ${data.humidity}%`;
       }
     });
 });
